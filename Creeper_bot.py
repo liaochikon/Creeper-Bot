@@ -16,7 +16,7 @@ def gemini_handler(chat_obj, prompt, cooldown_rest_sec = 60):
             for i in tqdm(range(cooldown_rest_sec),    desc="Runtime error...  API cooldown..."):
                 time.sleep(1)
 
-api_key = load_info("key.txt")
+api_key = load_info("keys\\google\\gemini-2.0-flash.txt")
 max_results = 10
 candidate_count = 1
 temperature = 0.5
